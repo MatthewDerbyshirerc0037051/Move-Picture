@@ -59,15 +59,5 @@ namespace Move_picture.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] image_for_Move_Picture {
-            get {
-                object obj = ResourceManager.GetObject("image_for_Move_Picture", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }
