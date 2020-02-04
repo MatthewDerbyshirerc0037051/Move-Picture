@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Resources\image for Move Picture.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jones 2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
