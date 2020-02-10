@@ -32,7 +32,7 @@ namespace Move_picture
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Location.X + 5 < ClientRectangle.Width - pictureBox1.Width)
+            if (pictureBox1.Location.X + 10 < ClientRectangle.Width - pictureBox1.Width)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 10, pictureBox1.Location.Y);
             }
@@ -40,12 +40,18 @@ namespace Move_picture
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 10);
+            if (pictureBox1.Location.Y > 0)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 10);
+            }
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            pictureBox1.Location = new Point(pictureBox1.Location.X, +pictureBox1.Location.Y + 10);
+            if (pictureBox1.Location.Y + 10 < ClientRectangle.Height - pictureBox1.Height)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, +pictureBox1.Location.Y + 10);
+            }
         }
 
         private void TableLayoutPanel1_Paint(object sender, PaintEventArgs e)
